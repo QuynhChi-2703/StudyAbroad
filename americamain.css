@@ -1,0 +1,249 @@
+
+
+/* Định dạng container cho hình ảnh */
+.image-container {
+    display: flex;
+    background-color: #FFFAF0;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* Thẻ bao quanh từng hình ảnh và tên trường */
+.card {
+    text-align: center;
+    width: 350px;
+}
+
+/* Hình ảnh */
+.card img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ card */
+    height: auto; /* Đảm bảo không bị méo hình */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào hình ảnh */
+.card img:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo đổ bóng */
+}
+
+/* Tiêu đề dưới hình ảnh */
+.card .title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfa; /* Màu nền nhạt xanh dương */
+    color: #333;
+    line-height: 1.8;
+}
+header {
+    background-color: #FFC1C1; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 20px;
+    font-size: 40px;
+    text-align: center; /* Căn giữa nội dung */
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài */
+}
+/* Phần đầu trang: hình ảnh và tiêu đề */
+.details-header {
+    text-align: center;
+    margin: 40px 0;
+}
+.details-header img {
+    max-width: 600px; /* Đặt kích thước tối đa cho hình ảnh */
+    width: 80%; /* Đảm bảo hình ảnh không chiếm quá nhiều màn hình */
+    border-radius: 10px; /* Bo góc nhẹ */
+    margin-bottom: 20px;
+    box-shadow: none; /* Loại bỏ hiệu ứng đổ bóng nếu có */
+}
+
+.details-header h1 {
+    font-size: 32px;
+    color: #EE6363; /* Màu chữ nổi bật */
+    margin-top: 20px;
+}
+/* Nội dung */
+.content {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: none; /* Loại bỏ màu nền của nội dung */
+    box-shadow: none; /* Loại bỏ khung và đổ bóng */
+    border-radius: 0; /* Không bo góc */
+    color: #444; /* Màu chữ tối hơn để dễ đọc */
+    text-align: justify;
+}
+
+/* Tiêu đề nội dung */
+.content h2 {
+    font-size: 28px;
+    color: #FFC1C1; /* Màu xanh nổi bật */
+    margin-top: 30px;
+}
+
+/* Nút Quay Về */
+.back-to-main {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-to-main button {
+    background-color: #FFC1C1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-to-main button:hover {
+    background-color: #FFC1C1;
+}
+
+/* Header */
+header {
+    background-color: #FFC1C1;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Nội dung chính */
+.content {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Hình ảnh */
+img {
+    max-width: 80%; /* Giới hạn hình ảnh chiếm 80% chiều rộng trang */
+    height: auto; /* Duy trì tỷ lệ hình ảnh */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+}
+
+/* Mô tả chi tiết */
+.description {
+    text-align: left;
+    font-size: 18px;
+}
+/* Phần đầu trang */
+.details-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.details-header img {
+    max-width: 600px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details-header h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 2px 1px #f8cea4;
+    color:#df3b3b;
+}
+
+/* Mục lục */
+.toc {
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    width: 200px;
+    background-color: #FFFAF0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toc h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #CD853F;
+}
+
+.toc ol {
+    padding-left: 20px;
+}
+
+.toc ol li {
+    color: #8B3A3A;
+    margin: 5px 0px;
+}
+
+.toc ol li a {
+    text-decoration: none;
+    color: #8B3A3A;
+    font-size: 18px;
+}
+
+.toc ol li a:hover {
+    text-decoration: underline;
+}
+
+/* Nội dung */
+.content-section {
+    margin: 20px 250px 20px 240px;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.card .title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none; /* Loại bỏ gạch dưới */
+}
+
+/* Giữa hình ảnh không có đường gạch */
+.card {
+    text-align: center;
+    margin: 20px auto; /* Căn giữa các mục */
+}
+
+/* Thêm chút không gian giữa hình ảnh */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Khoảng cách giữa các hình ảnh */
+    margin: 40px auto;
+}

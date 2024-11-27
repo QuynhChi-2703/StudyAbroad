@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN-SIGNUP</title>
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="dangky.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-forms">
+            <div class="container-info">
+                <div class="info-item">
+                    <p>Đã có tài khoản?</p>
+                    <button class="btn">Đăng nhập</button>
+                </div>
+                <div class="info-item">
+                    <p>Chưa có tài khoản?</p>
+                    <button class="btn">Đăng ký</button>
+                </div>
+            </div>
+            <div class="container-form">
+                <form class="form-item log-in" action="">
+                    <h1>Đăng nhập</h1>
+                    <input id="loginUsername" name="Username" placeholder="Tên đăng nhập" type="text">
+                    <input id="loginPassword" name="Password" placeholder="Mật khẩu" type="password">
+                    <div id="loginMessage"></div>
+                    <button class="btn" onclick="login(event)" type="submit">Đăng nhập</button>
+                </form>
+                <form class="form-item sign-up" action="">
+                    <h1>Đăng ký</h1>
+                    <input type="email" id="regEmail" placeholder="Email" name="Email">
+                    <input type="text" id="regFullname" name="Fullname" placeholder="Họ và tên">
+                    <input type="text" id="regUsername" name="Username" placeholder="Tên đăng nhập">
+                    <input type="password" name="Password" placeholder="Mật khẩu" id="regPassword">
+                    <div id="regMessage"></div>
+                    <button class="btn" type="submit" onclick="register(event)">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Main JS-->
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

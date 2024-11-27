@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm du học</title>
+    <link rel="stylesheet" href="trangtimkiem.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tìm Kiếm Du Học</h1>
+        
+        <!-- Form tìm kiếm -->
+        <form id="search-form" onsubmit="return searchUniversity(event)">
+            <label for="country">Chọn quốc gia:</label>
+            <select id="country" name="country">
+                <option value="">--Chọn quốc gia--</option>
+                <option value="DuhocMy">Mỹ</option>
+                <option value="quocgia">Anh</option>
+                <option value="DuhocUc">Úc</option>
+                <option value="DuhocJapan">Nhật</option>
+                <option value="DuhocChina">Trung Quốc</option>
+            </select>
+            <button type="submit">Tìm kiếm</button>
+        </form>
+
+        <!-- Kết quả tìm kiếm -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="trangtimkiem.js"></script>
+</body>
+</html>
